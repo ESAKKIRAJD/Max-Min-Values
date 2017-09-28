@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, 
+    user-scalable=no" /> 
+	<title>My Min / Max JavaScript Methods</title>    
+    <link rel="stylesheet" type="text/css" href="resetstyle.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	 	<div class="container">
+	 		<div class="row">
+        <div class="col">
+	 	      <input type="number" id="x">
+          <input type="number" id="y">
+          <input type="number" id="z">
+          <button type="button" onclick="maxiFunction()">Maximum value</button>
+          <button type="button" onclick="mniFunction()">Minmum value</button>
+          </div>
+        </div>
+          <p> Result is: <span id="value"></span></p>
+    </div>
+             
+            <script type="text/javascript">
+
+            function  maxiFunction(){
+              // body...
+
+              var a=document.getElementById('x').value;
+              var b=document.getElementById('y').value;
+              var c=document.getElementById('z').value;
+              if (a>b && a>c) {
+                document.getElementById('value').innerHTML="The max value is" +a;
+              }
+              else if (b>c && b>a){
+                 document.getElementById('value').innerHTML="The max value is" +b;
+              }
+              else {
+                 document.getElementById('value').innerHTML="The max value is" +c;
+              }
+            }
+
+            function  mniFunction(){
+              // body...
+
+              var a=document.getElementById('x').value;
+              var b=document.getElementById('y').value;
+              var c=document.getElementById('z').value;
+              if (a<b && a<c) {
+                document.getElementById('value').innerHTML="The min value is" +a;
+              }
+              else if (b<c && b<a){
+                 document.getElementById('value').innerHTML="The min value is" +b;
+              }
+              else {
+                 document.getElementById('value').innerHTML="The min value is" +c;
+              }
+            }
+      </script>
+
+
+
+
+	 <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" 
+            crossorigin="anonymous">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" 
+            crossorigin="anonymous">
+            </script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous">
+            </script>
+
+
+  </body>
+</html>
